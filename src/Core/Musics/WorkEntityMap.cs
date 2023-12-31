@@ -8,7 +8,7 @@ public sealed class WorkEntityMap : IEntityTypeConfiguration<Work>
     public void Configure(EntityTypeBuilder<Work> builder)
     {
         builder.ToTable(
-            "styles",
+            "works",
             options => options.ExcludeFromMigrations());
 
         builder.HasKey(w => w.Id);

@@ -13,7 +13,7 @@ public static class MigrationsConfigurationExtensions
         return services
             .AddFluentMigratorCore()
             .ConfigureRunner(runner => runner
-                .AddPostgres()
+                .AddPostgres11_0()
                 .WithGlobalConnectionString(connectionString)
                 .ScanIn(typeof(MusicsDbContext).Assembly));
     }

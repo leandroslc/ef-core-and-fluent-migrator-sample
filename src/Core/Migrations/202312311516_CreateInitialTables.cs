@@ -55,10 +55,10 @@ public sealed class CreateInitialTables : Migration
             .WithColumn("style_id")
                 .AsInt32()
                 .NotNullable()
-                .ReferencedBy("fk_works_styles", "styles", "id")
+                .ForeignKey("fk_works_styles", "styles", "id")
             .WithColumn("compositor_id")
                 .AsInt32()
                 .NotNullable()
-                .ReferencedBy("fk_works_compositors", "compositors", "id");
+                .ForeignKey("fk_works_compositors", "compositors", "id");
     }
 }

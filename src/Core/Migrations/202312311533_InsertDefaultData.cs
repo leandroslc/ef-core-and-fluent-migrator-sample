@@ -33,7 +33,7 @@ public sealed class InsertDefaultData : Migration
         {
             id = InitialId,
             name = "Ballade no. 4 in F minor",
-            catalog_number = "",
+            catalog_number = "Opus 52",
             composition_year = 1842,
             style_id = InitialId,
             compositor_id = InitialId,

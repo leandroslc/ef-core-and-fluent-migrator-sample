@@ -6,7 +6,7 @@ public class Work
 
     public required string Name { get; init; }
 
-    public required DateTime CompositionYear { get; init; }
+    public required int CompositionYear { get; init; }
 
     public required string CatalogNumber { get; init; }
 

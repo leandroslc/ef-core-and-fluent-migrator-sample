@@ -12,5 +12,9 @@ public class Work
 
     public required Style Style { get; init; }
 
+    public int StyleId { get; private set; }
+
     public required Compositor Compositor { get; init; }
+
+    public int CompositorId { get; private set; }
 }

@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace EFCoreAndFluentMigrator.Core.Infrastructure;
+namespace EFCoreAndFluentMigrator.Core.Musics;
 
 public sealed class MusicsDbContext : DbContext
 {

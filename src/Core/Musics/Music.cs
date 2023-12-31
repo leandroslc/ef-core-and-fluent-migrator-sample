@@ -1,6 +1,6 @@
 namespace EFCoreAndFluentMigrator.Core.Musics;
 
-public class Work
+public class Music
 {
     public int Id { get; private set; }
 

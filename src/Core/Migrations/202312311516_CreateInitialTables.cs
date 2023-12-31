@@ -7,7 +7,7 @@ public sealed class CreateInitialTables : Migration
 {
     public override void Down()
     {
-        Delete.Table("works");
+        Delete.Table("musics");
         Delete.Table("styles");
         Delete.Table("compositors");
     }
@@ -37,12 +37,12 @@ public sealed class CreateInitialTables : Migration
                 .NotNullable();
 
         Create
-            .Table("works")
+            .Table("musics")
             .WithColumn("id")
                 .AsInt32()
                 .NotNullable()
                 .Identity()
-                .PrimaryKey("pk_works")
+                .PrimaryKey("pk_musics")
             .WithColumn("name")
                 .AsString(200)
                 .NotNullable()
@@ -55,10 +55,10 @@ public sealed class CreateInitialTables : Migration
             .WithColumn("style_id")
                 .AsInt32()
                 .NotNullable()
-                .ForeignKey("fk_works_styles", "styles", "id")
+                .ForeignKey("fk_musics_styles", "styles", "id")
             .WithColumn("compositor_id")
                 .AsInt32()
                 .NotNullable()
-                .ForeignKey("fk_works_compositors", "compositors", "id");
+                .ForeignKey("fk_musics_compositors", "compositors", "id");
     }
 }

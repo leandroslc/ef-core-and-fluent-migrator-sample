@@ -10,7 +10,7 @@ public sealed class InsertDefaultData : Migration
 
     public override void Down()
     {
-        Delete.FromTable("works").Row(new { id = InitialId });
+        Delete.FromTable("musics").Row(new { id = InitialId });
         Delete.FromTable("styles").Row(new { id = InitialId });
         Delete.FromTable("compositors").Row(new { id = InitialId });
     }
@@ -29,7 +29,7 @@ public sealed class InsertDefaultData : Migration
             name = "Fryderyk Franciszek Chopin",
         };
 
-        var work = new
+        var music = new
         {
             id = InitialId,
             name = "Ballade no. 4 in F minor",
@@ -50,8 +50,8 @@ public sealed class InsertDefaultData : Migration
             .WithOverridingSystemValue();
 
         Insert
-            .IntoTable("works")
-            .Row(work)
+            .IntoTable("musics")
+            .Row(music)
             .WithOverridingSystemValue();
     }
 }

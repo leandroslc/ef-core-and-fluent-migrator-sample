@@ -3,12 +3,12 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace EFCoreAndFluentMigrator.Core.Musics;
 
-public sealed class WorkEntityMap : IEntityTypeConfiguration<Work>
+public sealed class MusicEntityMap : IEntityTypeConfiguration<Music>
 {
-    public void Configure(EntityTypeBuilder<Work> builder)
+    public void Configure(EntityTypeBuilder<Music> builder)
     {
         builder.ToTable(
-            "works",
+            "musics",
             options => options.ExcludeFromMigrations());
 
         builder.HasKey(w => w.Id);

@@ -11,10 +11,10 @@ public class MusicRepository
         this.context = context;
     }
 
-    public async Task<IReadOnlyCollection<Work>> GetAllAsync()
+    public async Task<IReadOnlyCollection<Music>> GetAllAsync()
     {
         return await context
-            .Set<Work>()
+            .Set<Music>()
             .Include(w => w.Compositor)
             .Include(w => w.Style)
             .ToListAsync();

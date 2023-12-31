@@ -5,7 +5,7 @@ namespace EFCoreAndFluentMigrator.Sample;
 
 public static class Output
 {
-    public static void Write(IReadOnlyCollection<Work> musics)
+    public static void Write(IReadOnlyCollection<Music> musics)
     {
         var table = new Table();
 

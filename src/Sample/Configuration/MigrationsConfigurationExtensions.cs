@@ -1,7 +1,8 @@
+using EFCoreAndFluentMigrator.Core.Musics;
 using FluentMigrator.Runner;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace EFCoreAndFluentMigrator.Core.Configuration;
+namespace EFCoreAndFluentMigrator.Sample.Configuration;
 
 public static class MigrationsConfigurationExtensions
 {
@@ -14,6 +15,6 @@ public static class MigrationsConfigurationExtensions
             .ConfigureRunner(runner => runner
                 .AddPostgres()
                 .WithGlobalConnectionString(connectionString)
-                .ScanIn(typeof(MigrationsConfigurationExtensions).Assembly));
+                .ScanIn(typeof(MusicsDbContext).Assembly));
     }
 }

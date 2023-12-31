@@ -2,7 +2,7 @@ using EFCoreAndFluentMigrator.Core.Musics;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace EFCoreAndFluentMigrator.Core.Configuration;
+namespace EFCoreAndFluentMigrator.Sample.Configuration;
 
 public static class DbContextConfigurationExtensions
 {

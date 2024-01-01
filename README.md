@@ -8,6 +8,11 @@ Other languages: [pt-BR](./docs/README.pt-BR.md)
 ## :book: Purpose
 A sample application to show how to easily setup a database with [EF Core](https://learn.microsoft.com/ef/core) and [Fluent Migrator](https://fluentmigrator.github.io).
 
+Here are some concepts this sample presents:
+- How to setup EF Core and Fluent Migrator.
+- How to automatically create the database if it does not exist (using EF Core).
+- How to run migrations (using Fluent Migrator).
+
 ## :package: Requirements
 - Make sure you have [.NET SDK version 7](https://dotnet.microsoft.com).
 - Make sure you have [docker and docker compose](https://www.docker.com/get-started).

@@ -8,6 +8,11 @@ Outros idiomas: [en](./README.md)
 ## :book: Propósito
 Uma aplicação de exemplo para mostrar como facilmente configurar um banco de dados com [EF Core](https://learn.microsoft.com/ef/core) e [Fluent Migrator](https://fluentmigrator.github.io).
 
+Aqui estão alguns conceitos que este exemplo apresenta:
+- Como configurar o EF Core e Fluent Migrator.
+- Como criar o banco de dados automaticamente se ele não existir (usando o EF Core).
+- Como executar migrations (usando o Fluent Migrator).
+
 ## :package: Requisitos
 - Certifique-se que você tenha o [.NET SDK versão 7](https://dotnet.microsoft.com).
 - Certifique-se que você tenha o [docker e o docker compose](https://www.docker.com/get-started).

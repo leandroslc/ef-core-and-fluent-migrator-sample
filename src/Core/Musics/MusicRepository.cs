@@ -15,7 +15,7 @@ public class MusicRepository
     {
         return await context
             .Set<Music>()
-            .Include(w => w.Compositor)
+            .Include(w => w.Composer)
             .Include(w => w.Style)
             .ToListAsync();
     }

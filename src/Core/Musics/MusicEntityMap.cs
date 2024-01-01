@@ -34,8 +34,8 @@ public sealed class MusicEntityMap : IEntityTypeConfiguration<Music>
             .HasColumnName("style_id");
 
         builder
-            .Property(w => w.CompositorId)
-            .HasColumnName("compositor_id");
+            .Property(w => w.ComposerId)
+            .HasColumnName("composer_id");
 
         builder
             .HasOne(w => w.Style)
@@ -43,8 +43,8 @@ public sealed class MusicEntityMap : IEntityTypeConfiguration<Music>
             .HasForeignKey(w => w.StyleId);
 
         builder
-            .HasOne(w => w.Compositor)
+            .HasOne(w => w.Composer)
             .WithMany()
-            .HasForeignKey(w => w.CompositorId);
+            .HasForeignKey(w => w.ComposerId);
     }
 }

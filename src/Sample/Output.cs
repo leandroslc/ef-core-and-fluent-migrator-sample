@@ -14,7 +14,7 @@ public static class Output
             "[orange1]Catalog[/]",
             "[orange1]Year[/]",
             "[orange1]Style[/]",
-            "[orange1]Compositor[/]");
+            "[orange1]Composer[/]");
 
         foreach (var music in musics)
         {
@@ -23,7 +23,7 @@ public static class Output
                 music.CatalogNumber,
                 music.CompositionYear.ToString(),
                 $"[purple]{music.Style.Name}[/]",
-                $"[cyan]{music.Compositor.Name}[/]");
+                $"[cyan]{music.Composer.Name}[/]");
         }
 
         AnsiConsole.Write(table);

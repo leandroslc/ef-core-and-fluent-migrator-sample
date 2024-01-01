@@ -12,7 +12,7 @@ public sealed class InsertDefaultData : Migration
     {
         Delete.FromTable("musics").Row(new { id = InitialId });
         Delete.FromTable("styles").Row(new { id = InitialId });
-        Delete.FromTable("compositors").Row(new { id = InitialId });
+        Delete.FromTable("composers").Row(new { id = InitialId });
     }
 
     public override void Up()
@@ -23,7 +23,7 @@ public sealed class InsertDefaultData : Migration
             name = "Romantic",
         };
 
-        var compositor = new
+        var composer = new
         {
             id = InitialId,
             name = "Fryderyk Franciszek Chopin",
@@ -36,7 +36,7 @@ public sealed class InsertDefaultData : Migration
             catalog_number = "Opus 52",
             composition_year = 1842,
             style_id = InitialId,
-            compositor_id = InitialId,
+            composer_id = InitialId,
         };
 
         Insert
@@ -45,8 +45,8 @@ public sealed class InsertDefaultData : Migration
             .WithOverridingSystemValue();
 
         Insert
-            .IntoTable("compositors")
-            .Row(compositor)
+            .IntoTable("composers")
+            .Row(composer)
             .WithOverridingSystemValue();
 
         Insert

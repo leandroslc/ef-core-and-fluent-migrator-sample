@@ -14,7 +14,7 @@ public class Music
 
     public int StyleId { get; private set; }
 
-    public required Compositor Compositor { get; init; }
+    public required Composer Composer { get; init; }
 
-    public int CompositorId { get; private set; }
+    public int ComposerId { get; private set; }
 }
